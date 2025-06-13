@@ -5,12 +5,12 @@ import Nav from "./components/Nav"
 import './App.css'
 import Container from "./components/Container"
 import InnerContainer from "./components/InnerContainer"
-import FoodDetail from "./components/FoodDetail"
+import FoodDetails from "./components/FoodDetails"
 
 
 function App() {
   const [foodData, setFoodData]= useState([])
-  const [foodId, setFoodId]= useState("")
+  const [foodId, setFoodId]= useState("658615")
 
 
   return (
@@ -18,13 +18,13 @@ function App() {
       <Nav/>
       <Search foodData={foodData} setFoodData={setFoodData}/>
 
-      {/* this is the nested comp and when we have to access childern wecan  use children to renderdata*/}
+      {/* this is the nested comp and when we have to access children we can  use children to render data*/}
       <Container>
         <InnerContainer> 
           <FoodList foodData={foodData} setFoodId={setFoodId} />
           </InnerContainer>
         <InnerContainer> 
-          <FoodDetail foodId={foodId}/>
+          <FoodDetails foodId={foodId}/>
           </InnerContainer>
       
       </Container>
