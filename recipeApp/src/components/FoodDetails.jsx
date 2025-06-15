@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import styles from './fooddetails.module.css'
+import IngredientsList from "./IngredientsList";
 
 
 export default function FoodDetails({ foodId }) {
@@ -49,18 +50,9 @@ export default function FoodDetails({ foodId }) {
         💵💳 Price per serving: NRS. {food.pricePerServing} 
       </span>
 </div>
-<h2>REquired Ingredients 
-{food.extendedIngredients.map((item)=>
-<div>
 
-<img src={`https://spoonacular.com/cdn/ingredients_100x100/`+item.image} alt="" />
-<h3>{item.name}</h3>
-  <h3>{item.amount}  {item.unit} </h3>
-
-</div>
-
-)}
-
+<h2>Required Ingredients 
+<IngredientsList food={food} isLoading={isLoading}/>
 </h2>
 
 
