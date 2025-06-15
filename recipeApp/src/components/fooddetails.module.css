@@ -1,0 +1,46 @@
+.mainContainer{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.2);
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+
+}
+
+.foodName{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: coral;
+    font-weight: bold;
+}
+
+.recipeImage{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.recipeDetails{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+
+}
+.recipeInstruction{
+    padding: 0px;
+    border-radius: 5px;
+    color: rgba(70, 69, 69, 0.875);
+
+}
+
+.recipeInstruction ol{
+    margin-left: 0px;
+}
+
+.recipeInstruction li{
+   margin: 10px 0px;
+}
